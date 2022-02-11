@@ -11,3 +11,14 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
+
+function enableDarkMode() {
+    var element = document.body;
+    var darkModeText = document.getElementById('dark-mode-text');
+    element.classList.toggle("dark");
+    if (darkModeText.innerHTML == "Dark Mode") {
+        darkModeText.innerHTML = "Light Mode";
+    } else {
+        darkModeText.innerHTML = "Dark Mode";
+    }
+}

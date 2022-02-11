@@ -14,8 +14,9 @@
     --fw-bold: 900;
 
     --clr-light: #fff;
+    --clr-light2: #a0a6ff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #656aad;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -23,6 +24,14 @@
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+.dark {
+    --clr-light: #303030;
+    --clr-light2: #838383;
+    --clr-dark: #adadad;
+    --clr-accent: #656aad;
+    --clr-accent2: rgb(83, 95, 255);
 }
 
 @media (min-width: 800px)  {
@@ -85,6 +94,62 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.1);
 }
 
+/* Dark Mode */
+
+.dark-mode-switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+}
+  
+.dark-mode-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.dark-mode-slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-light2);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.dark-mode-slider:before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    height: 29px;
+    width: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--clr-light);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .dark-mode-slider {
+    background-color: var(--clr-accent2);
+}
+
+input:checked + .dark-mode-slider:before {
+    -webkit-transform: translateX(42px);
+    -ms-transform: translateX(42px);
+    transform: translateX(42px);
+}
+
+.dark-mode-text {
+    margin-top: -.15em;
+    text-align: center;
+}
+
 /* Typography */
 
 h1,
@@ -113,6 +178,7 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
+    color: #fff;
 }
 
 .section__subtitle--intro,
@@ -139,14 +205,20 @@ h3 { font-size: var(--fs-h3) }
     padding: 1em;
 }
 
-.logo {
+.logo,
+.dark-mode {
     max-width: 100px;
+}
+
+.dark-mode {
+    margin: auto;
+    margin-top: -2.5em;
 }
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: #303030;
+    color: #fff;
     top: 0;
     bottom: 0;
     left: 0;
@@ -281,7 +353,7 @@ h3 { font-size: var(--fs-h3) }
     background-image: url(../img/Placeholder-11.jpg);
     background-size: cover;
     background-blend-mode: multiply; /* depending on color */
-    color: var(--clr-light);
+    color: #fff;
     text-align: center;
 }
 
