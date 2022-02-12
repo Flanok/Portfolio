@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>DevEthan Portfolio Website</title>
+            <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+            <script src="https://kit.fontawesome.com/a7dc5a060a.js" crossorigin="anonymous"></script>
+
+            <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/Placeholder-logo.jpg" alt="">
+            </div>
+            <div class="dark-mode">
+                <label class="dark-mode-switch">
+                    <input type="checkbox" onchange="enableDarkMode()">
+                    <span class="dark-mode-slider"></span>
+                </label>
+                <p class="dark-mode-text" id="dark-mode-text">Dark Mode</p>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Character Creator for <strong>D&D</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="img/college-project-small.png" alt="" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>In college, I worked on a project to create a randomly generated character sheet for Dungeons and Dragons. It seemed like it would be a challenge,
+                and it was. The technology for Android Studio, Java, and being able to send PDFs through email was all very challenging and new. It was a lot of fun
+                to work on and learn new things.
+            </p>
+            <p>One of the students would have people over to play D&D every now and then, and sometimes they would be people who don't really play. His 
+                idea was to create these simple character sheets so they could start playing fast, and if they enjoyed it, clean up the character sheets before their
+                next session.
+            </p>
+            <img src="img/college-project-sheet.png" alt="">
+            <p>This was also my first experience with Github - and while we didn't finish quite how we wanted to due to running out of time, we made considerable
+                progress with how many new technologies we had to learn.
+            </p>
+            <p>The link to the project page is <a class="work-links" href="https://github.com/Flanok/DnDCharacterSheet">here</a>.</p>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href=""mailto:ethan.adams747@gmail.com" class="footer__link">ethan.adams747@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/flanok" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/ethan-adams747" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body> 
+
+    <script src="js/index.js"></script>
+    
+</html>

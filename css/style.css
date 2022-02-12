@@ -126,7 +126,7 @@ strong { font-weight: var(--fw-bold) }
     position: absolute;
     content: "";
     border-radius: 50%;
-    height: 29px;
+    height: 27px;
     width: 50px;
     left: 4px;
     bottom: 4px;
@@ -466,8 +466,12 @@ h3 { font-size: var(--fs-h3) }
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.01);
-    opacity: .75;
+    /* transform: scale(1.01); */
+    opacity: .50;
+}
+
+.work-links {
+    color: var(--clr-accent);
 }
 
 /* Footer */
