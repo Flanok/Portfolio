@@ -350,7 +350,7 @@ h3 { font-size: var(--fs-h3) }
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/Placeholder-11.jpg);
+    background-image: url(../img/what-I-do.png);
     background-size: cover;
     background-blend-mode: multiply; /* depending on color */
     color: #fff;
